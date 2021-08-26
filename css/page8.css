@@ -94,11 +94,12 @@ div.right_side{
 
 label.lb{
   /* border: 1px solid red; */
-  margin-top: 8px;
+  margin: 8px 0 0;
 }
 
 input{
-  height: 20px;
+  height: 25px;
+  width: 200px;
 }
 
 button{
