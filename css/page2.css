@@ -1,0 +1,768 @@
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+  list-style: none;
+}
+
+body{
+  /* display: block; */
+  margin: 0 auto;
+}
+
+header.header, footer.footer{
+  /* border: 1px solid black; */
+  margin: 0 auto;
+}
+
+/* header區域 */
+
+header.header{
+  background-color: #E3D9D9;
+  /* border: 1px solid red; */
+  min-width: 100%;
+  width: 1200px;
+}
+
+div.logo_nav{
+  display: flex;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
+a.logo{
+  width: 300px;
+  /* height: 150px; */
+}
+
+a.logo img{
+  width: 100%;
+  /* vertical-align: middle; */
+}
+
+div.inside{
+  /* border: 1px solid red; */
+  margin-left: 110px;
+}
+
+button{
+  cursor: pointer;
+}
+
+button img{
+  width: 20px;
+  height: 20px;
+}
+
+form.header-search{
+  float: right;
+}
+
+form.header-search input{
+  padding: 5px 10px;
+  float: left;
+}
+
+form.header-search input:focus, form.header-search button:focus{
+  outline: none;
+  background-color: #fae7cd;
+}
+
+nav.nav{
+  margin: 60px auto -30px;
+}
+
+ul.nav_list{
+  margin: 0 auto 20px;
+}
+
+ul.nav_list > li{
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ul.nav_list > li > a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #80677a;
+  padding: 10px;
+  /* border: 1px solid black; */
+  transform: translateY(0px);
+  transition: 0.5s;
+}
+
+ul.nav_list > li > a:hover{
+  background-color: #d0b7ab;
+  color: black;
+  border-radius: 10px;
+  transform: translateY(-10px);
+}
+
+div.social_block{
+  font-size: 1rem;
+  padding: 5px 10px;
+  position: relative;
+}
+
+div.social_block:hover ul.social_link_list{
+  display: block;
+}
+
+ul.social_link_list{
+  margin: 0;
+  padding: 0;
+  display: none;
+  border: 1px solid #58340a;
+  z-index: 10;
+  background-color: white;
+  position: absolute;
+  right: -1px;
+  top: 10px;
+}
+
+ul.social_link_list > li{
+  list-style: none;
+  width: 85px;
+  border: 1px dotted #58340a;
+}
+
+ul.social_link_list > li > a{
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 12px 8px;
+}
+
+ul.social_link_list > li > a:hover{
+  color: #58340a;
+}
+
+div.icon{
+  display: inline-block;
+  /* border: 1px solid red; */
+}
+
+div.icon img{
+  width: 40px;
+  height: 80px;
+  padding-bottom: 42px;
+}
+
+
+
+
+div.breadcrumb{
+  background-color: #f2f7fb;
+  padding: 5px 10px;
+  min-width: 100%;
+  width: 1200px;
+}
+
+div.breadcrumb ol.breadcrumb_list{
+  margin: 5px auto;
+  padding: 0;
+  list-style: none;
+  max-width: 1200px;
+}
+div.breadcrumb ol.breadcrumb_list > li{
+/*   border: 1px solid red; */
+  display: inline-block;
+  color: #bb755a;
+  font-size: 15px;
+}
+
+/* 利用 ::before 擬似元素，創造斜線做為分隔 */
+div.breadcrumb ol.breadcrumb_list > li::before{
+  content: "/";
+  font-size: 18px;
+  color: gray;
+  margin: 0 5px;
+}
+/* 第一個 li 元素，將 ::before 設定回來需要的 */
+div.breadcrumb ol.breadcrumb_list > li:first-child::before{
+  display: none;
+}
+
+/* 基本文字樣式 */
+div.breadcrumb ol.breadcrumb_list > li > a{
+/*   border: 1px solid blue; */
+  text-decoration: none;
+  display: inline-block;
+  color: #676a6d;
+}
+
+/* 滑動移過後改變文字顏色 */
+div.breadcrumb ol.breadcrumb_list > li > a:hover{
+  color: #6d73bb;
+}
+
+
+
+
+/* main區域 */
+
+main{
+  /* display: flex; */
+  /* justify-content: center;*/
+  /* align-items: flex-start; */
+  /* min-height: 100vh; */
+  /* width: 1200px */
+  min-width: 100%;
+  width: 1200px;
+  background-color: #E3D9D9;
+}
+
+div.fiex-contain{
+  max-width: 1200px;
+  height: 100%;
+  width: 100%;
+}
+
+div.navslide{
+  /* border: 1px solid red; */
+  height: 500px;
+}
+
+ul.slides {
+  position: relative;
+  max-width: 1000px;
+  height: 500px;
+  list-style: none;
+  padding: 0;
+  background-color: #f1ebe1;
+  overflow: hidden;
+}
+
+li.slide {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  transition: .5s transform ease-in-out;
+}
+
+li.slide:nth-of-type(1) {
+  background-image: url(../images/slideimg5.JPG);
+}
+
+li.slide:nth-of-type(2) {
+  background-image: url(../images/slideimg4.PNG);
+  left: 100%;
+}
+
+input[type="radio"] {
+  position: relative;
+  z-index: 100;
+  display: none;
+}
+
+div.controls-visible {
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+  text-align: center;
+}
+
+div.controls-visible label {
+  display: inline-block;
+  width: 60px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 20%;
+  margin: 0 8px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+ul.slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1) {
+  background-color: #a73434;
+}
+
+ul.slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2) {
+  background-color: #a73434;
+}
+
+ul.slides input[type="radio"]:nth-of-type(1):checked ~ .slide {
+  transform: translatex(0%);
+}
+
+ul.slides input[type="radio"]:nth-of-type(2):checked ~ .slide {
+  transform: translatex(-100%);
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~ .navigator:nth-of-type(1) {
+  display: flex;
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .navigator:nth-of-type(2) {
+  display: flex;
+}
+
+
+/* 文字 */
+div.text{
+  /* border: 1px solid red; */
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+div.text p span{
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+div.text p{
+  color: #a73535;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+
+
+/* 凝膠、護理 */
+div.content-link{
+  width: 1200px;
+  height: 300px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+
+ul.painted{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  list-style: none;
+}
+
+ul.painted li:first-child{
+  background-image: url(../images/pic.jpg);
+}
+
+ul.painted li:nth-child(2){
+  background-image: url(../images/wash.jpg);
+}
+
+ul.painted li{
+  width: 470px;
+  height: 310px;
+  background-position: center;
+  background-size: cover;
+  margin: -25px;
+}
+
+ul.painted li > a{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid white;
+  margin: 10px;
+}
+
+ul.painted div{
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: inherit;
+  transition: all 1s;
+}
+
+ul.painted a:hover div{
+  height: 310px;
+  transition-timing-function: ease-in-out;
+  padding-top: 50px;
+}
+
+ul.painted li:first-child div{
+  background-color: rgba(216, 135, 174, .8);
+  padding-top: 12.5px;
+}
+
+ul.painted li:nth-child(2) div{
+  background-color: rgba(208, 124, 57, .8);
+  padding-top: 12.5px;
+}
+
+ul.painted li > a div > h3{
+  /* line-height: 50px; */
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 12.5px;
+  line-height: 1;
+}
+
+ul.painted li > a div > p{
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+ul.painted li > a:hover div > h3{
+  /* line-height: 50px; */
+  font-weight: 500;
+  font-size: 25px;
+  padding-top: 100px;
+  line-height: 1;
+}
+
+ul.painted li > a:hover div > p{
+  margin: 20 10px;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+
+
+/* 頁籤標題 */
+div.back{
+  /* border: 1px solid red; */
+  min-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 130px 0 70px;
+  line-height: 50px;
+}
+
+div.step_title{
+  width: 600px;
+  height: 50px;
+  float: right;
+  background-color: #C7A0A0;
+  border-radius: 15px 0 0 15px;
+}
+
+div.step_title h4{
+  color: #fff;
+  text-align: left;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+
+/* 頁籤流程 */
+div.tab_process{
+  /* border: 1px solid red; */
+  width: 1200px;
+  height: 980px;
+  margin: 0 auto;
+}
+
+/* 步驟 */
+div.tab_step{
+  width: 1000px;
+  padding-left: 20px;
+}
+
+/* 頁籤列表 */
+ul.tab_bookmark{
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+ul.tab_bookmark > li{
+  display: inline-block;
+}
+ul.tab_bookmark > li > a{
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #f1dbd3;
+  padding: 12px 55px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+  color: #443939;
+  position: relative;
+  top: 2px;
+  background-color: #F7F6F4;
+}
+
+ul.tab_bookmark > li > a > p{
+  font-size: 18px;
+}
+
+/* 畫出底部黑線 */
+ul.tab_bookmark > li > a::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  height: 1px;
+  background-color: #bf755a;
+  bottom:-1px;
+  left: -1px;
+  /* z-index: 1; */
+}
+ul.tab_bookmark > li > a.-on{
+  border: 2px solid #bf755a;
+  border-bottom: 1px solid white;
+  color: #ab5050;
+}
+/* 將底部黑線改成白色 */
+ul.tab_bookmark > li > a.-on::after{
+  background-color: white;
+  width: 100%;
+  left: 0;
+}
+
+
+
+/* 頁籤內容區塊 */
+div.tab_process div.tab_contents{
+  border: 2px solid #bf755a;
+  width: 1000px;
+  height: 800px;
+  border-radius: 20px;
+/*   margin-top: 30px; */
+box-shadow: -30px 30px 0 0 #EDE6E1;
+}
+div.tab_contents div.tab{
+  padding: 50px;
+  display: none;
+}
+div.tab_contents div.tab.-on{
+  display: block;
+}
+
+div.one, .two, .three{
+  /* border: 1px solid black; */
+  width: 800px;
+  height: 230px;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+div.one img, .two img, .three img{
+  width: 250px;
+  height: auto;
+  background-size: cover;
+  border-radius: 60px;
+}
+
+div.one img:hover, .two img:hover, .three img:hover{
+  width: 280px;
+  height: auto;
+}
+
+div.content_block{
+  /* border: 1px solid red; */
+  width: 400px;
+  position: relative;
+}
+
+div.content_block p{
+  font-size: 28px;
+  padding: 0;
+  border-bottom: 2px solid #d29595;
+}
+
+div.content_block p span{
+  font-size: 16px;
+}
+
+div.content_block ul{
+  margin-top: 5px;
+}
+
+div.content_block li{
+  line-height: 26px;
+}
+
+
+
+
+
+
+
+div.back2{
+  /* border: 1px solid red; */
+  min-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 100px;
+  line-height: 50px;
+}
+
+div.step_title2{
+  width: 600px;
+  height: 50px;
+  float: left;
+  background-color: #C7A0A0;
+  border-radius: 0 15px 15px 0;
+}
+
+div.step_title2 h4{
+  color: #fff;
+  text-align: right;
+  font-size: 30px;
+  margin-right: 40px;
+}
+
+div.attention{
+  /* border: 1px solid red; */
+  width: 1200px;
+  margin: 0 auto 50px;
+  display: block;
+}
+
+div.attention p{
+  line-height: 30px;
+  padding-left: 24%;
+}
+
+
+div.right_sidebar{
+  /* border: 1px solid red; */
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+  min-height: 400px;
+  width: 310px;
+  background-color: #f5f3e4;
+  color: black;
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px 0 0 10px;
+  z-index: 100;
+  transition: transform 1s;
+}
+div.right_sidebar.-open{
+  transform: translate(0%, -50%);
+}
+
+button.btn_drawer{
+  background: none;
+  background-color: #EFEBBB;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  color: black;
+  border: 1px solid #835656;
+  font-size: 18px;
+  width: 1.6em;
+  padding: 4px 0;
+  line-height: 1.6;
+  display: inline-block;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+div.sidebar h3{
+  font-size: 20px;
+  font-weight: bold;
+  color: #ca7824;
+}
+
+div.sidebar img{
+  width: 40px;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+div.sidebar p > span{
+  color: #515456;
+  font-size: 14px;
+}
+
+
+button.go_top{
+  width: 40px;
+  height: 40px;
+  background: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+}
+
+button.go_top img{
+  width: 22px;
+  height: 20px;
+}
+
+
+
+
+
+
+
+/* footer */
+
+
+footer.footer{
+  min-width: 100%;
+  width: 1200px;
+  /* height: 200px; */
+  margin: 20px auto 0;
+  font-size: 1rem;
+  display: block;
+  background: #E3D9D9;
+  padding: 30px 0;
+}
+footer div.picture{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer div.picture span{
+  margin: 5px 10px;
+}
+footer div.picture span img{
+  width: 45px;
+  height: 45px;
+}
+footer div.search{
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div.search span{
+  margin: 5px 50px
+}
+footer div.search span a{
+  text-decoration: none;
+}
+footer div.search span p{
+  color: black;
+}
+footer div.search span p:hover{
+  color: brown;
+  font-size: 24px;
+}
+footer div.notice{
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer div.notice p.cw{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 5px;
+  color: #8a4906;
+}

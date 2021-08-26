@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      ul.list{
+        border: 1px solid black;
+      }
+
+      ul.list > li{
+        border: 1px solid red;
+
+
+        /* opacity: 1;
+        transition: opacity 1s; */
+
+      }
+
+
+      /* ul.list > li.-remove{
+        opacity: 0;
+      } */
+
+
+      ul.list > li::after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      button.del{
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="list">
+      <li>
+        <button type="button" class="del">刪除</button>
+        這是文字1
+      </li>
+      <li>
+        <button type="button" class="del">刪除</button>
+        這是文字2
+      </li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // var del = document.getElementsByClassName("del");
+      // console.log(del);
+      // for(let i = 0; i < del.length; i++){
+        // console.log(i);
+        // del[i].addEventListener("click", function(){
+          // alert("test");
+          // console.log(this);
+          // this.closest("li").remove();
+          // console.log(this.disabled);
+          /* 方式一
+          this.disabled = true;
+          let closest_li = this.closest("li");
+          closest_li.style.opacity = 1;
+
+          let interval_id = setInterval(function(){
+            // console.log(closest_li.style.opacity);
+            // clearInterval(interval_id);
+            if(closest_li.style.opacity <= 0){
+              console.log("執行到這裡");
+              clearInterval(interval_id);
+              closest_li.remove();
+            }else{
+              closest_li.style.opacity -= 0.1;
+            }
+          }, 100);
+          */
+
+
+        // 方式二
+          /*
+          this.disabled = true;
+          let closest_li = this.closest("li");
+          closest_li.classList.add("-remove");
+          setTimeout(function(){
+            closest_li.remove();
+          }, 1000);
+          */
+
+          // 方式三 載入ＪＱ
+          // $(this).closest("li").fadeOut(1000, function(){
+          //   // console.log(this)
+          //   $(this).remove();
+          // });
+
+        // });
+      // }
+
+      // 方式四
+      $("button.del").on("click", function(){
+        $(this).closest("li").fadeOut(1000, function(){
+          // console.log(this)
+          $(this).remove();
+        });
+
+      });
+
+    </script>
+  </body>
+</html>
