@@ -6,15 +6,15 @@
 
 body{
   /* display: block; */
-  margin: 0 auto;
-  min-width: 100%;
-  width: 1200px;
+  /* margin: 0 auto; */
+  /* min-width: 100%;
+  width: 1200px; */
 }
 
 header.header, footer.footer{
   /* border: 1px solid black; */
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  /* padding: 0; */
 }
 
 /* header區域 */
@@ -24,6 +24,9 @@ header.header{
   background-color: #E3D9D9;
   min-width: 100%;
   width: 1200px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 div.logo_nav{
@@ -49,10 +52,13 @@ div.inside{
   margin-left: 110px;
 }
 
+button{
+  cursor: pointer;
+}
+
 button img{
   width: 20px;
   height: 20px;
-  cursor: pointer;
 }
 
 form.header-search{

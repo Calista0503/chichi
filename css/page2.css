@@ -6,7 +6,7 @@
 
 body{
   /* display: block; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 header.header, footer.footer{
@@ -21,6 +21,9 @@ header.header{
   /* border: 1px solid red; */
   min-width: 100%;
   width: 1200px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 div.logo_nav{

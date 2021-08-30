@@ -6,9 +6,9 @@
 
 body{
   /* display: block; */
-  margin: 0 auto;
+  /* margin: 0 auto;
   min-width: 100%;
-  width: 1200px;
+  width: 1200px; */
 }
 
 header.header, footer.footer{
@@ -23,6 +23,9 @@ header.header{
   background-color: #E3D9D9;
   min-width: 100%;
   width: 1200px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 div.logo_nav{
@@ -55,7 +58,6 @@ button{
 button img{
   width: 20px;
   height: 20px;
-  cursor: pointer;
 }
 
 form.header-search{
@@ -162,7 +164,6 @@ div.icon img{
 div.breadcrumb{
   background-color: #f2f7fb;
   padding: 5px 10px;
-  border-radius: 5px;
   margin-bottom: 40px;
   min-width: 100%;
   width: 1200px;
