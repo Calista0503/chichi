@@ -4,10 +4,10 @@
   list-style: none;
 }
 
-body{
-  /* display: block; */
-  /* margin: 0 auto; */
-}
+/* body{
+  display: block;
+  margin: 0 auto;
+} */
 
 header.header, footer.footer{
   /* border: 1px solid black; */
