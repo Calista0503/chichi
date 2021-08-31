@@ -96,6 +96,12 @@ ul.nav_list > li > a{
   transition: 0.5s;
 }
 
+ul.nav_list > li.bg{
+  background-color: #f6f9fb;
+  color: black;
+  border-radius: 10px;
+}
+
 ul.nav_list > li > a:hover{
   background-color: #d0b7ab;
   color: black;

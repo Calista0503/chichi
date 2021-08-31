@@ -83,7 +83,7 @@ ul.nav_list{
   margin: 0 auto 20px;
 }
 
-ul.nav_list li{
+ul.nav_list > li{
   list-style: none;
   display: inline-block;
   vertical-align: top;
@@ -97,6 +97,12 @@ ul.nav_list li > a{
   /* border: 1px solid black; */
   transform: translateY(0px);
   transition: 0.5s;
+}
+
+ul.nav_list > li.bg{
+  background-color: #f6f9fb;
+  color: black;
+  border-radius: 10px;
 }
 
 ul.nav_list li > a:hover{
