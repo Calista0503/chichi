@@ -3,24 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="美甲, 手足護理">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>ChiChi 美甲 | 手足護理 | 作品欣賞</title>
     <link rel="stylesheet" href="../css/page2.css">
-    <!-- <link rel="stylesheet" href="../css/page8.css"> -->
   </head>
   <body>
     <header class="header">
-      <div class="logo_nav">
-        <a href="./page1.html" class="logo">
-          <img src="../images/logo.png" alt="logo">
-        </a>
+      <div class="container">
+        <div class="logo_nav">
+          <a href="./page1.html" class="logo">
+            <img src="../images/logo.png" alt="logo">
+          </a>
+        </div>
 
         <div class="inside">
-          <form class="header-search">
+          <!-- <form class="header-search">
             <input type="search" placeholder="search">
             <button>
               <img src="../images/search.png" alt="搜索">
             </button>
-          </form>
+          </form> -->
 
           <nav class="nav">
             <ul class="nav_list">
@@ -32,15 +34,28 @@
               <li><a href="./page7.html">Q&A</a></li>
             </ul>
           </nav>
+        
 
+          <div class="hamburger_nav" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="list">
+              <li><a href="./page2.html" class="items">服務項目</a></li>
+              <li><a href="./page3.html" class="price">價目表</a></li>
+              <li><a href="./page4.html" class="appreciate">美甲作品欣賞</a></li>
+              <li><a href="./page5.html" class="about">ChiChi家族</a></li>
+              <li><a href="./page6.html" class="member">Ｃhicard會員</a></li>
+              <li><a href="./page7.html" class="qa">Q&A</a></li>
+            </ul>
+          </div>
+
+          <div class="icon">
+            <a href="#">
+              <img src="../images/login.png" id="login">
+            </a>
+          </div>
         </div>
-        <div class="icon">
-          <a href="#">
-            <img src="../images/login.png" id="login">
-          </a>
-        </div>
-      </div>
-    </div>
       </div>
     </header>
 
@@ -58,8 +73,12 @@
             <input type="radio" id="control-1" name="control" checked>
             <input type="radio" id="control-2" name="control">
 
-            <li class="slide"></li>
-            <li class="slide"></li>
+            <li class="slide">
+              <img src="../images/slideimg5.JPG">
+            </li>
+            <li class="slide">
+              <img src="../images/slideimg4.PNG">
+            </li>
 
             <!--對應input-->
             <div class="controls-visible">
@@ -318,6 +337,11 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      function myFunction(x){
+      x.classList.toggle("change");
+    }
+    </script>
     <script src="../js/page4.js"></script>
     <script>
       $("button.go_top").on("click",function(){

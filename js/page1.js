@@ -27,10 +27,6 @@ $(function(){
   article.addEventListener("click", function(event){
     event.stopPropagation();
   });
-  // 2-2：使用onclick(HTML屬性，較不推薦)
-  // article.onclick = function(event){
-  //   event.stopPropagation();
-  // };
 
   $("div.box").on("click", function(){
     $("div.box").fadeOut();
