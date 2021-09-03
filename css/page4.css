@@ -350,7 +350,7 @@ main.main{
   width: 1200px;
 }
 
-div.sc{
+/* div.sc{
   border: 1px solid red;
   position: relative;
   height: 100px;
@@ -377,13 +377,49 @@ div.my img{
   background-color: #f1c5b6;
   border-radius: 15%;
   cursor: pointer;
-}
+} */
 
 div.contain{
-  display: flex;
-  min-width: 100%;
-  width: 1200px;
+  /* min-width: 100%; */
+  /* width: 1200px; */
   margin: 120px auto 0;
+}
+
+div.opts{
+  /* border: 1px solid red; */
+  display: none;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  div.opts{
+    display: inline-block;
+  }
+}
+
+div.opt{
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-left: 15%;
+}
+
+div.opt2{
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-left: 50px;
+}
+
+div.opt h3{
+  font-size: 16px;
+}
+
+div.opt2 h3{
+  font-size: 16px;
+}
+
+select.all{
+  cursor: pointer;
 }
 
 div.side_nav{
@@ -391,6 +427,14 @@ div.side_nav{
   width: 12%;
   padding: 10px 10px;
   margin: 0 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px){
+  div.side_nav{
+    display: none;
+  }
 }
 
 div.side_nav h3{
@@ -434,9 +478,20 @@ ul.drop_down > li:hover{
 div.sub_container{
   /* border: 1px solid red; */
   width: 925px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  div.sub_container{
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  div.sub_container{
+    width: 720px;
+  }
 }
 
 div.product_item{
@@ -446,7 +501,8 @@ div.product_item{
   background-color: #f9f6f6;
   box-shadow: 5px 5px #d8c7bb;
   align-items: center;
-  margin-bottom: 2%;
+  display: inline-block;
+  margin: 0 25px 5%;
 }
 
 div.pic{
