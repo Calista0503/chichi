@@ -192,7 +192,7 @@ div.hamburger_nav{
 
 @media (min-width: 576px) and (max-width: 1199.98px){
   div.hamburger_nav{
-    width: 960px;
+    /* width: 960px; */
     top: 26px;
     left: -50px;
   }

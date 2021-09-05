@@ -192,7 +192,7 @@ div.hamburger_nav{
 
 @media (min-width: 576px) and (max-width: 1199.98px){
   div.hamburger_nav{
-    width: 960px;
+    /* width: 960px; */
     top: 26px;
     left: -50px;
   }
@@ -516,15 +516,52 @@ div.backg{
 div.add{
   /* border: 1px solid red; */
   width: 1200px;
-  margin-top: 30px;
+  margin-top: 60px;
   display: flex;
-  padding: 20px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  div.add{
+    width: 960px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  div.add{
+    width: 720px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  div.add{
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  div.add{
+    width: 100%;
+  }
 }
 
 div.news{
   /* border: 1px solid red; */
   line-height: 50px;
   margin-top: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  div.news{
+    width: 720px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  div.news{
+    width: 540px;
+    display: flex;
+  }
 }
 
 div.news h3{
@@ -621,8 +658,8 @@ button.go_top img{
 
 
 footer.footer{
-  min-width: 100%;
-  width: 1200px;
+  /* min-width: 100%; */
+  /* width: 1200px; */
   /* height: 200px; */
   margin: 20px auto 0;
   font-size: 1rem;
@@ -649,21 +686,66 @@ footer div.search{
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  footer div.search{
+    width: 720px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  footer div.search{
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  footer div.search{
+    width: 100%;
+  }
+}
+
 footer div.search span{
   margin: 5px 50px
 }
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  footer div.search span{
+    margin: 5px 25px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  footer div.search span{
+    margin: 5px 13px;
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  footer div.search span{
+    margin: 5px auto;
+  }
+}
+
 footer div.search span a{
   text-decoration: none;
 }
 footer div.search span p{
   color: black;
 }
+
+@media screen and (max-width: 575.98px){
+  footer div.search span p{
+    color: #515456;
+  }
+}
+
 footer div.search span p:hover{
   color: brown;
   font-size: 24px;
 }
 footer div.notice{
-  width: 1200px;
+  /* width: 1200px; */
   display: flex;
   justify-content: center;
   flex-direction: column;
