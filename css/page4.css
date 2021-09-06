@@ -345,8 +345,8 @@ div.breadcrumb ol.breadcrumb_list > li > a:hover{
 main.main{
   /* margin: 0 auto; */
   /* min-width: 100%; */
-  /* width: 1200px; */
-  margin-left: 100px;
+  max-width: 1200px;
+  /* margin-left: 100px; */
 }
 
 /* div.sc{
@@ -379,14 +379,17 @@ div.my img{
 } */
 
 div.contain{
-  /* min-width: 100%; */
+  min-width: 100%;
   /* width: 1200px; */
   margin: 120px auto 0;
+  display: flex;
+  /* border: 1px solid red; */
 }
 
 @media (min-width: 576px) and (max-width: 1199.98px){
   div.contain{
     margin: 90px auto 0;
+    display: grid;
   }
 }
 
@@ -400,12 +403,23 @@ div.opts{
 @media (min-width: 992px) and (max-width: 1199.98px){
   div.opts{
     display: inline-block;
+    margin-left: 110px;
+    width: 80%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){
   div.opts{
     display: inline-block;
+    margin-left: 50px;
+    width: 80%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  div.opts{
+    display: inline-block;
+    width: 80%
   }
 }
 
@@ -441,7 +455,7 @@ div.side_nav{
   /* border: 1px solid red; */
   width: 12%;
   padding: 10px 10px;
-  /* margin: 0 30px; */
+  margin: 0 30px;
   display: inline-block;
   vertical-align: top;
 }
@@ -501,12 +515,7 @@ div.sub_container{
   width: 925px;
   display: inline-block;
   vertical-align: top;
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px){
-  div.sub_container{
-    display: inline-block;
-  }
+  /* margin-left: 60px; */
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){
@@ -516,7 +525,7 @@ div.sub_container{
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){
-  div.my_div1{
+  div.sub_container{
     width: 540px;
   }
 }
@@ -531,6 +540,20 @@ div.product_item{
   align-items: center;
   display: inline-block;
   margin: 0 25px 5%;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  div.product_item{
+    width: 300px;
+    height: 320px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  div.product_item{
+    width: 490px;
+    height: 510px;
+  }
 }
 
 div.pic{
@@ -564,6 +587,17 @@ div.pages_all{
   width: 925px;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px){
+  div.pages_all{
+    width: 80%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  div.pages_all{
+    width: 80%;
+  }
+}
 
 div.pages{
   /* border: 1px solid red; */
