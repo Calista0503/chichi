@@ -124,15 +124,16 @@ div.hamburger_nav ul.list{
   top: 60px;
   text-align: center;
   display: none;
-  list-style: square;
+  list-style: none;
   color: #e2b1b1;
   z-index: 50;
 }
 
 div.change ul.list{
   display: inline-block;
-  background-color: #e6e2dd;
-  border-radius: 16px;
+  background-color: #efebeb;
+  /* border-radius: 16px; */
+  padding: 20px 0;
 }
 
 div.change ul.list li{
