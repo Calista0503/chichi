@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 0;
   list-style: none;
 }
 
@@ -674,7 +675,7 @@ ul.painted li > a:hover div > p{
 /* 頁籤標題 */
 div.back{
   /* border: 1px solid red; */
-  margin: 80px auto 30px;
+  margin: 200px auto 30px;
 }
 
 div.back h4{
@@ -686,189 +687,135 @@ div.back h4{
 @media (min-width: 576px) and (max-width: 767.98px){
   div.back h4{
     width: 100%;
-    margin-top: 60%;
+    margin-top: 450px;
   }
 }
 
 @media screen and (max-width: 575.98px){
   div.back h4{
     width: 100%;
-    margin-top: 90%;
+    margin-top: 450px;
   }
 }
 
-/* 頁籤流程 */
-div.tab_process{
-  /* border: 1px solid red; */
-  width: 1200px;
-  height: 980px;
-  margin: 0 auto;
-}
 
-/* 步驟 */
-div.tab_step{
-  width: 1000px;
-  padding-left: 20px;
-}
 
-/* 頁籤列表 */
-ul.tab_bookmark{
-  list-style: none;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-ul.tab_bookmark > li{
-  display: inline-block;
-}
-ul.tab_bookmark > li > a{
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-bottom: 1px solid #f1dbd3;
-  padding: 12px 55px;
-  border-radius: 15px 15px 0 0;
-  cursor: pointer;
-  color: #443939;
+
+
+/* 流程 */
+section.timeline{
   position: relative;
-  top: 2px;
-  background-color: #F7F6F4;
-}
-
-ul.tab_bookmark > li > a > p{
-  font-size: 18px;
-}
-
-/* 畫出底部黑線 */
-ul.tab_bookmark > li > a::after{
-  content: "";
-  position: absolute;
-  width: calc(100% + 2px);
-  height: 1px;
-  background-color: #bf755a;
-  bottom:-1px;
-  left: -1px;
-  /* z-index: 1; */
-}
-ul.tab_bookmark > li > a.-on{
-  border: 2px solid #bf755a;
-  border-bottom: 1px solid white;
-  color: #ab5050;
-}
-/* 將底部黑線改成白色 */
-ul.tab_bookmark > li > a.-on::after{
-  background-color: white;
-  width: 100%;
-  left: 0;
-}
-
-
-
-/* 頁籤內容區塊 */
-div.tab_process div.tab_contents{
-  border: 2px solid #bf755a;
-  width: 1000px;
-  height: 800px;
-  border-radius: 20px;
-/*   margin-top: 30px; */
-box-shadow: -30px 30px 0 0 #EDE6E1;
-}
-div.tab_contents div.tab{
-  padding: 50px;
-  display: none;
-}
-div.tab_contents div.tab.-on{
-  display: block;
-}
-
-div.one, .two, .three{
-  /* border: 1px solid black; */
-  width: 800px;
-  height: 230px;
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  column-gap: 20px;
-  align-items: center;
+  height: 1400px;
   margin: 0 auto;
+  padding-top: 50px;
+  background: #fdf9f4;
 }
 
-
-div.one img, .two img, .three img{
-  width: 250px;
-  height: auto;
-  background-size: cover;
-  border-radius: 60px;
-}
-
-div.one img:hover, .two img:hover, .three img:hover{
-  width: 280px;
-  height: auto;
-}
-
-div.content_block{
+li.in_view{
   /* border: 1px solid red; */
   width: 400px;
+  margin-bottom: 40px;
+  margin-right: 20%;
+}
+
+li.in_view2{
+  /* border: 1px solid red; */
+  width: 400px;
+  margin-bottom: 40px;
+  margin-left: 20%;
+}
+
+li.in_view div{
   position: relative;
+  bottom: 0;
+  /* width: 400px; */
+  padding: 20px;
+  background: #fff;
+  box-shadow: 4px 10px 25px 1px rgb(252 56 56 / 20%);
+  border-radius: 5px;
 }
 
-div.content_block p{
-  font-size: 28px;
-  padding: 0;
-  border-bottom: 2px solid #d29595;
+li.in_view2 div{
+  position: relative;
+  bottom: 0;
+  /* width: 400px; */
+  padding: 20px;
+  background: #fff;
+  box-shadow: 4px 10px 25px 1px rgb(252 56 56 / 20%);
+  border-radius: 5px;
 }
 
-div.content_block p span{
-  font-size: 16px;
+li.in_view div time{
+  position: absolute;
+  background: #e8a6a6;
+  color: #fff;
+  height: 30px;
+  top: -10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  padding: 0 5px;
 }
 
-div.content_block ul{
-  margin-top: 5px;
+li.in_view2 div time{
+  position: absolute;
+  background: #e8a6a6;
+  color: #fff;
+  height: 30px;
+  top: -10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  padding: 0 5px;
 }
 
-div.content_block li{
-  line-height: 26px;
+div.process img{
+  width: 100%;
 }
 
-
-
+div.nail{
+  text-align: center;
+}
 
 
 
 
 div.back2{
   /* border: 1px solid red; */
-  min-width: 100%;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 0 100px;
-  line-height: 50px;
+  margin: 100px auto 30px;
 }
 
-div.step_title2{
-  width: 600px;
-  height: 50px;
-  float: left;
-  background-color: #C7A0A0;
-  border-radius: 0 15px 15px 0;
+div.back2 h4{
+  color: #ca7824;
+  text-align: center;
+  font-size: 28px;
 }
 
-div.step_title2 h4{
-  color: #fff;
-  text-align: right;
-  font-size: 30px;
-  margin-right: 40px;
+@media (min-width: 576px) and (max-width: 767.98px){
+  div.back2 h4{
+    width: 100%;
+    margin-top: 450px;
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  div.back2 h4{
+    width: 100%;
+    margin-top: 450px;
+  }
 }
 
 div.attention{
   /* border: 1px solid red; */
-  width: 1200px;
-  margin: 0 auto 50px;
-  display: block;
+  margin: 0 20% 50px;
 }
 
 div.attention p{
   line-height: 30px;
-  padding-left: 24%;
 }
 
 
