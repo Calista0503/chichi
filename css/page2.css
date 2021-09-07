@@ -705,24 +705,60 @@ div.back h4{
 /* 流程 */
 section.timeline{
   position: relative;
-  height: 1400px;
   margin: 0 auto;
   padding-top: 50px;
-  background: #fdf9f4;
+  /* background: #fdf9f4; */
+}
+
+div.box{
+  /* border: 1px solid red; */
+  max-width: 1000px;
+  margin-top: 10px;
+}
+
+div.number{
+  display: inline-block;
+  border: 1px solid pink;
+  width: 55%;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 900.98px){
+  div.number{
+    display: none;
+  }
+}
+
+div.number p{
+  font-size: 200px;
+  padding-left: 60%;
+  color: #f3eee7;
+  text-shadow: 2px 4px darkgrey;
+}
+
+section.timeline ul{
+  display: inline-block;
 }
 
 li.in_view{
   /* border: 1px solid red; */
   width: 400px;
-  margin-bottom: 40px;
-  margin-right: 20%;
+  margin-bottom: 88px;
+  /* margin-right: 20%; */
+  margin-left: 20%;
 }
 
 li.in_view2{
   /* border: 1px solid red; */
   width: 400px;
-  margin-bottom: 40px;
-  margin-left: 20%;
+  margin-bottom: 88px;
+  /* margin-left: 20%; */
+}
+
+@media screen and (max-width: 900.98px){
+  li.in_view2{
+    margin-left: 350px;
+  }
 }
 
 li.in_view div{
@@ -816,8 +852,17 @@ div.attention{
 
 div.attention p{
   line-height: 30px;
+  border: 1px solid;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  background-color: floralwhite;
 }
 
+div.attention p span{
+  color: #676a6d;
+}
 
 div.right_sidebar{
   /* border: 1px solid red; */
