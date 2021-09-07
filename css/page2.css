@@ -723,6 +723,8 @@ div.number{
   border-radius: 50px;
 }
 
+
+
 @media screen and (max-width: 900.98px){
   div.number{
     display: none;
@@ -755,9 +757,21 @@ li.in_view2{
   /* margin-left: 20%; */
 }
 
-@media screen and (max-width: 900.98px){
+@media (min-width: 768px) and (max-width: 901.98px){
   li.in_view2{
     margin-left: 350px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  li.in_view2{
+    margin-left: 180px;
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  li.in_view2{
+    margin-left: 5px;
   }
 }
 
@@ -834,14 +848,14 @@ div.back2 h4{
 @media (min-width: 576px) and (max-width: 767.98px){
   div.back2 h4{
     width: 100%;
-    margin-top: 450px;
+    margin-top: 100px;
   }
 }
 
 @media screen and (max-width: 575.98px){
   div.back2 h4{
     width: 100%;
-    margin-top: 450px;
+    margin-top: 100px;
   }
 }
 
