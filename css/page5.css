@@ -335,7 +335,7 @@ div.breadcrumb ol.breadcrumb_list > li > a:hover{
 main div._block{
   border: 1px solid #fff;
   height: 525px;
-    background-color: #e9d1c8;
+  background-color: #f3ebe8;
 }
 
 @media screen and (max-width: 575.98px){

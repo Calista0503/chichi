@@ -22,31 +22,31 @@ div.headerall{
   margin: 0 auto;
   /* border: 1px solid red; */
   min-width: 100%;
-  width: 1200px;
-  height: 140px;
+  height: 100px;
+  background-color: rgb(227, 217, 217, .6);
+  box-shadow: 0 2px 3px #d2c8c2;
 }
 
 div.logo_nav{
   display: inline-block;
-  padding: 45px 100px;
+  padding: 13px 50px;
   align-items: center;
+  /* border: 1px solid red; */
 }
 
 a.logo img{
   width: 350px;
-  vertical-align: middle;
 }
 
 div.icon{
   display: inline-block;
-  position: absolute;
-  top: 55px;
+  /* position: absolute; */
+  top: 32px;
 }
 
 div.icon img{
   /* border: 1px solid red; */
   width: 55px;
-  height: 55px;
   margin-left: 515px;
   margin-top: 6px;
 }
@@ -70,7 +70,7 @@ div.hamburger_nav{
   display: inline-block;
   position: absolute;
   right: 9%;
-  top: 53%;
+  top: 43%;
   cursor: pointer;
 }
 
@@ -172,7 +172,7 @@ div.other_text1{
   position: absolute;
   /* border: 1px solid; */
   margin-left: 650px;
-  margin-top: 10px;
+  margin-top: 3%;
 }
 
 div.other_text1 > P{
@@ -185,7 +185,7 @@ div.other_text2{
   position: absolute;
   /* border: 1px solid; */
   margin-left: 560px;
-  margin-top: 168px;
+  margin-top: 12%;
 }
 
 div.other_text2 > P{
@@ -208,7 +208,6 @@ div.pic img{
   width: 40px;
   height: 40px;
 }
-
 
 
 div.title{
