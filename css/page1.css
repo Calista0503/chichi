@@ -156,8 +156,15 @@ div.story{
   background-repeat: no-repeat;
   background-size: 100%;
   max-width: 1200px;
+  position: relative;
+  z-index: 2;
   /* height: 900px; */
   /* border: 1px solid red; */
+}
+
+div.text_all{
+  position: relative;
+  z-index: 2;
 }
 
 div.other_text{
@@ -347,7 +354,19 @@ div.pic{
   height: 40px;
   position: relative;
   margin-top: 28%;
-  margin-left: 665px;
+  margin-left: 55%;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px){
+  div.pic{
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  div.pic{
+    margin-top: 0;
+  }
 }
 
 div.pic img{
@@ -356,20 +375,39 @@ div.pic img{
   height: 40px;
 }
 
+@media (min-width: 576px) and (max-width: 991.98px){
+  div.pic img{
+    display: none;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 575.98px){
+  div.pic img{
+    display: none;
+  }
+}
 
 div.title{
   /* border: 1px solid black; */
-  width: 1200px;
+  max-width: 1200px;
   padding: 80px 0 50px 0;
   font-size: 28px;
   text-align: center;
   color: #ca7824;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 575.98px){
+  div.title{
+    padding: 60px 0 40px 0;
+  }
 }
 
 
 div.the_div{
-  width: 1200px;
-  height: 350px;
+  max-width: 1200px;
+  /* height: 350px; */
   /* border: 1px solid red; */
   overflow: hidden;
   background-image: url(../images/bg2.PNG);
@@ -378,6 +416,12 @@ div.the_div{
   background-size: cover;
   background-attachment: fixed;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 575.98px){
+  div.the_div{
+    display: none;
+  }
 }
 
 div.content{
@@ -401,13 +445,11 @@ div.content > p{
 
 
 
-
 div.under{
   width: 1200px;
   margin: 100px auto 50px;
   background-image: url(../images/backg4.jpg);
   background-repeat: no-repeat;
-  /* background-size: cover; */
 }
 
 div.icon-logo:first-child{
