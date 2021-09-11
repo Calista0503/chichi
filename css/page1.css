@@ -426,7 +426,7 @@ div.the_div{
 
 div.content{
   /* border: 1px solid red; */
-  width: 1200px;
+  /* width: 1200px; */
   height: 350px;
   background-color: hsla(100, 0%, 80%, 0.2);
   border-radius: 20px;
@@ -442,6 +442,38 @@ div.content > p{
   font-size: 18px;
 }
 
+
+/* 手機版 */
+div.app{
+  display: none;
+}
+
+@media screen and (max-width: 575.98px){
+  div.app{
+    border: 1px solid red;
+    display: block;
+  }
+
+  div.block{
+    /* border: 1px solid rebeccapurple; */
+    height: 350px;
+    overflow: hidden;
+  }
+
+  div.block img{
+    width: 100%;
+  }
+
+  div.appcontent{
+    background-color: #e2b1b1;
+  }
+
+  div.appcontent > p{
+    color: #8a4906;
+    /* border: 1px solid red; */
+    max-width: 50%;
+  }
+}
 
 
 
