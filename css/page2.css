@@ -42,6 +42,12 @@ div.logo_nav{
   width: 300px;
 }
 
+@media screen and (max-width: 575.98px){
+  div.logo_nav{
+    left: 5px;
+  }
+}
+
 
 a.logo img{
   width: 100%;
@@ -177,7 +183,7 @@ div.hamburger_nav{
 @media (min-width: 576px) and (max-width: 1199.98px){
   div.hamburger_nav{
     top: 26px;
-    left: -50px;
+    right: -55px;
   }
 }
 
@@ -185,7 +191,7 @@ div.hamburger_nav{
   div.hamburger_nav{
     width: 100%;
     top: 26px;
-    left: -50px;
+    right: -55px;
   }
 }
 
@@ -818,7 +824,7 @@ div.back2 h4{
 
 div.attention{
   /* border: 1px solid red; */
-  margin: 0 20% 50px;
+  margin: 0 10% 50px;
 }
 
 div.attention p{

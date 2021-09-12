@@ -503,6 +503,12 @@ div.txt > ul{
   padding: 15px 100px;
 }
 
+@media screen and (max-width: 575.98px){
+  div.txt > ul{
+    padding: 15px 50px;
+  }
+}
+
 div.txt > ul > li span{
   color: #c19f87;
 }
