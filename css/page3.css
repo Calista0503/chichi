@@ -432,7 +432,14 @@ main.main{
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
+  main.main{
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 375.98px){
   main.main{
     width: 100%;
     border-radius: 0;
@@ -455,7 +462,13 @@ div.form h1{
   text-align: center;
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
+  div.form h1{
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 375.98px){
   div.form h1{
     font-size: 38px;
   }
@@ -478,17 +491,18 @@ div.bg img{
   }
 }
 
-@media (min-width: 576px) and (max-width: 991.98px){
+@media (min-width: 376px) and (max-width: 991.98px){
   div.bg img{
     display: none;
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media screen and (max-width: 375.98px){
   div.bg img{
     display: none;
   }
 }
+
 
 div.txt{
   /* border: 1px solid black; */
@@ -515,12 +529,20 @@ div.txt{
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
   div.txt{
     width: 100%;
     border-left: none;
   }
 }
+
+@media screen and (max-width: 375.98px){
+  div.txt{
+    width: 100%;
+    border-left: none;
+  }
+}
+
 
 div.title{
   /* border: 1px solid blue; */
@@ -531,13 +553,13 @@ div.title{
   color: #32628c;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 376px) and (max-width: 767.98px){
   div.title{
     width: 100%;
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media screen and (max-width: 375.98px){
   div.title{
     width: 100%;
   }
@@ -551,9 +573,15 @@ div.txt > ul{
   padding: 15px 100px;
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
   div.txt > ul{
-    padding: 15px 50px;
+    padding: 15px 40px;
+  }
+}
+
+@media screen and (max-width: 375.98px){
+  div.txt > ul{
+    padding: 15px 45px;
   }
 }
 
@@ -640,6 +668,7 @@ footer div.picture{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 10px;
 }
 footer div.picture span{
   margin: 5px 10px;

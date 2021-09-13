@@ -427,7 +427,14 @@ div.opts{
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
+  div.opts{
+    display: block;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375.98px){
   div.opts{
     display: block;
     width: 80%;
@@ -447,7 +454,14 @@ div.shape{
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
+  div.shape{
+    display: block;
+    margin: 0 0 10px;
+  }
+}
+
+@media screen and (max-width: 375.98px){
   div.shape{
     display: block;
     margin: 0 0 10px;
@@ -487,6 +501,10 @@ select.all{
   height: 25px;
 }
 
+
+
+
+
 div.side_nav{
   /* border: 1px solid red; */
   width: 12%;
@@ -496,13 +514,13 @@ div.side_nav{
   vertical-align: top;
 }
 
-@media (min-width: 576px) and (max-width: 1199.98px){
+@media (min-width: 376px) and (max-width: 1199.98px){
   div.side_nav{
     display: none;
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media screen and (max-width: 375.98px){
   div.side_nav{
     display: none;
   }
@@ -575,7 +593,13 @@ div.sub_container{
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
+  div.sub_container{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375.98px){
   div.sub_container{
     width: 100%;
   }
@@ -608,14 +632,24 @@ div.product_item{
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
   div.product_item{
     width: 80%;
     height: 8%;
-    margin: 0 50px 5%;
+    /* margin: 0 50px 5%; */
     box-shadow: none;
   }
 }
+
+@media screen and (max-width: 375.98px){
+  div.product_item{
+    width: 80%;
+    height: 8%;
+    box-shadow: none;
+  }
+}
+
+
 
 div.pic{
   border-radius: 5px;
@@ -648,19 +682,13 @@ div.pages_all{
   width: 925px;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px){
+@media (min-width: 378px) and (max-width: 991.98px){
   div.pages_all{
     width: 80%;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
-  div.pages_all{
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 575.98px){
+@media screen and (max-width: 375.98px){
   div.pages_all{
     width: 80%;
   }
@@ -760,15 +788,12 @@ div.sidebar p > span{
 
 
 button.go_top{
-  width: 40px;
+  width: 42px;
   height: 40px;
   background: none;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  color: white;
-  font-size: 20px;
-  line-height: 1;
+  position: sticky;
+  left: 20px;
+  border-radius: 20px;
   outline: none;
   cursor: pointer;
 }
