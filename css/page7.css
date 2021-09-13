@@ -288,8 +288,10 @@ div.hamburger_nav ul.list{
 
 div.change ul.list{
   display: inline-block;
-  background-color: #efebeb;
+  /* background-color: #efebeb; */
+  background-color: #f6f2e2;
   padding: 20px 0;
+  margin-top: 2px;
 }
 
 div.change ul.list li{
@@ -306,6 +308,7 @@ div.hamburger_nav ul a{
 
 div.hamburger_nav ul a:hover{
   color: #d46a2b;
+  border-bottom: 1px solid;
 }
 
 div.icon{
@@ -583,8 +586,8 @@ footer div.picture span img{
 
 @media screen and (max-width: 375.98px){
   footer div.picture span img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -689,6 +692,7 @@ footer div.notice{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding: 5px;
 }
 footer div.notice p{
   margin: 0 auto;
@@ -699,7 +703,8 @@ footer div.notice p{
 
 @media screen and (max-width: 375.98px){
   footer div.notice p{
-    font-size: 14px;
+    width: 100%;
+    font-size: 12px;
     margin-top: 10px;
   }
 }
