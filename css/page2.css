@@ -1,7 +1,6 @@
 *{
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0;
   list-style: none;
 }
 
@@ -183,7 +182,7 @@ div.hamburger_nav{
 @media (min-width: 576px) and (max-width: 1199.98px){
   div.hamburger_nav{
     top: 26px;
-    right: -55px;
+    right: -60px;
   }
 }
 
@@ -191,7 +190,7 @@ div.hamburger_nav{
   div.hamburger_nav{
     width: 100%;
     top: 26px;
-    right: -55px;
+    right: -60px;
   }
 }
 
@@ -280,6 +279,13 @@ div.icon{
 div.icon img{
   width: 40px;
   padding-top: 20px;
+}
+
+@media screen and (max-width: 575.98px){
+  div.icon img{
+    width: 50px;
+    padding-top: 15px;
+  }
 }
 
 
@@ -528,7 +534,6 @@ div.text p{
 div.content-link{
   width: 1200px;
   max-width: 100%;
-  height: 300px;
   /* border: 1px solid red; */
   margin: 0 auto;
 }
@@ -558,9 +563,15 @@ ul.painted{
 
 ul.painted li:first-child{
   background-image: url(../images/pic.jpg);
-  margin-right: 40px;
-  margin-bottom: 40px;
+  /* margin-right: 40px; */
 }
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+  ul.painted li:first-child{
+    margin-right: 40px;
+  }
+}
+
 
 ul.painted li:nth-child(2){
   background-image: url(../images/wash.jpg);
@@ -571,6 +582,13 @@ ul.painted li{
   height: 310px;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (max-width: 575.98px){
+  ul.painted li{
+    width: 385px;
+    height: 260px;
+  }
 }
 
 ul.painted li > a{
@@ -586,6 +604,12 @@ ul.painted li > a{
   margin: 10px;
 }
 
+@media screen and (max-width: 575.98px){
+  ul.painted li > a{
+    margin: 10px 0;
+  }
+}
+
 ul.painted div{
   position: absolute;
   bottom: 0;
@@ -594,10 +618,22 @@ ul.painted div{
   transition: all 1s;
 }
 
+@media screen and (max-width: 575.98px){
+  ul.painted div{
+    height: 100%;
+  }
+}
+
 ul.painted a:hover div{
   height: 310px;
   transition-timing-function: ease-in-out;
   padding-top: 50px;
+}
+
+@media screen and (max-width: 575.98px){
+  ul.painted a:hover div{
+    display: none;
+  }
 }
 
 ul.painted li:first-child div{
@@ -605,9 +641,21 @@ ul.painted li:first-child div{
   padding-top: 12.5px;
 }
 
+@media screen and (max-width: 575.98px){
+  ul.painted li:first-child div{
+    background-color: rgb(76 74 75 / .3);
+  }
+}
+
 ul.painted li:nth-child(2) div{
   background-color: rgba(208, 124, 57, .8);
   padding-top: 12.5px;
+}
+
+@media screen and (max-width: 575.98px){
+  ul.painted li:nth-child(2) div{
+    background-color: rgb(76 74 75 / .3);
+  }
 }
 
 ul.painted li > a div > h3{
@@ -616,6 +664,12 @@ ul.painted li > a div > h3{
   font-size: 25px;
   padding-bottom: 12.5px;
   line-height: 1;
+}
+
+@media screen and (max-width: 575.98px){
+  ul.painted li > a div > h3{
+    padding-top: 80px;
+  }
 }
 
 ul.painted li > a div > p{
@@ -639,7 +693,7 @@ ul.painted li > a:hover div > p{
 
 
 
-/* 頁籤標題 */
+/* 流程標題 */
 div.back{
   /* border: 1px solid red; */
   margin: 200px auto 30px;
@@ -654,14 +708,14 @@ div.back h4{
 @media (min-width: 576px) and (max-width: 767.98px){
   div.back h4{
     width: 100%;
-    margin-top: 450px;
+    margin-top: 50px;
   }
 }
 
 @media screen and (max-width: 575.98px){
   div.back h4{
     width: 100%;
-    margin-top: 450px;
+    margin-top: 150px;
   }
 }
 

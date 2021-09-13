@@ -41,9 +41,15 @@ div.logo_nav{
   width: 300px;
 }
 
+@media screen and (max-width: 575.98px){
+  div.logo_nav{
+    left: 5px;
+  }
+}
+
+
 a.logo img{
   width: 100%;
-  /* vertical-align: middle; */
 }
 
 a.logo img:hover{
@@ -73,7 +79,6 @@ nav.nav{
 }
 
 ul.nav_list{
-  /* margin: 0 auto 20px; */
   padding: 0;
   margin: 0 10px;
   display: inline-flex;
@@ -177,7 +182,7 @@ div.hamburger_nav{
 @media (min-width: 576px) and (max-width: 1199.98px){
   div.hamburger_nav{
     top: 26px;
-    left: -50px;
+    right: -60px;
   }
 }
 
@@ -185,7 +190,7 @@ div.hamburger_nav{
   div.hamburger_nav{
     width: 100%;
     top: 26px;
-    left: -50px;
+    right: -60px;
   }
 }
 
@@ -274,6 +279,13 @@ div.icon{
 div.icon img{
   width: 40px;
   padding-top: 20px;
+}
+
+@media screen and (max-width: 575.98px){
+  div.icon img{
+    width: 50px;
+    padding-top: 15px;
+  }
 }
 
 
