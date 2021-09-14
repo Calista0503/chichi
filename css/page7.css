@@ -445,9 +445,15 @@ div.order_list ol{
   }
 }
 
-@media (min-width: 376px) and (max-width: 575.98px){
+@media (min-width: 415px) and (max-width: 575.98px){
   div.order_list ol{
     margin-left: 60px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 414.98px){
+  div.order_list ol{
+    margin-left: 0px;
   }
 }
 

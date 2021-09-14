@@ -627,11 +627,19 @@ ul.painted{
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
   ul.painted{
     display: block;
     width: 100%;
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 375.98px){
+  ul.painted{
+    display: block;
+    width: 100%;
+    padding: 0;
   }
 }
 
@@ -659,9 +667,17 @@ ul.painted li{
   background-size: cover;
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
   ul.painted li{
     width: 385px;
+    max-width: 100%;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 375.98px){
+  ul.painted li{
+    width: 100%;
     height: 260px;
   }
 }
@@ -679,7 +695,13 @@ ul.painted li > a{
   margin: 10px;
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
+  ul.painted li > a{
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 375.98px){
   ul.painted li > a{
     margin: 10px 0;
   }
@@ -693,7 +715,14 @@ ul.painted div{
   transition: all 1s;
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
+  ul.painted div{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375.98px){
   ul.painted div{
     height: 100%;
   }
@@ -705,7 +734,13 @@ ul.painted a:hover div{
   padding-top: 50px;
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
+  ul.painted a:hover div{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375.98px){
   ul.painted a:hover div{
     display: none;
   }
@@ -716,7 +751,13 @@ ul.painted li:first-child div{
   padding-top: 12.5px;
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
+  ul.painted li:first-child div{
+    background-color: rgb(76 74 75 / .3);
+  }
+}
+
+@media screen and (max-width: 375.98px){
   ul.painted li:first-child div{
     background-color: rgb(76 74 75 / .3);
   }
@@ -727,7 +768,13 @@ ul.painted li:nth-child(2) div{
   padding-top: 12.5px;
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
+  ul.painted li:nth-child(2) div{
+    background-color: rgb(76 74 75 / .3);
+  }
+}
+
+@media screen and (max-width: 375.98px){
   ul.painted li:nth-child(2) div{
     background-color: rgb(76 74 75 / .3);
   }
@@ -787,7 +834,14 @@ div.back h4{
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
+  div.back h4{
+    width: 100%;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 375.98px){
   div.back h4{
     width: 100%;
     margin-top: 150px;
@@ -819,9 +873,13 @@ div.number{
   border-radius: 50px;
 }
 
+@media (min-width: 376px) and (max-width: 990px){
+  div.number{
+    display: none;
+  }
+}
 
-
-@media screen and (max-width: 900.98px){
+@media screen and (max-width: 375.98px){
   div.number{
     display: none;
   }
@@ -838,11 +896,40 @@ section.timeline ul{
   display: inline-block;
 }
 
+@media (min-width: 376px) and (max-width: 415px){
+  section.timeline ul{
+    padding: 0;
+  }
+}
+
 li.in_view{
   /* border: 1px solid red; */
   width: 400px;
   margin-bottom: 88px;
   margin-left: 20%;
+}
+
+@media (min-width: 576px) and (max-width: 990px){
+  li.in_view{
+    width: 350px;
+    margin-bottom: 88px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 575.98px){
+  li.in_view{
+    width: 350px;
+    margin-bottom: 88px;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 375.98px){
+  li.in_view{
+    width: 300px;
+    margin: 0 auto 88px;
+  }
 }
 
 li.in_view2{
@@ -851,21 +938,25 @@ li.in_view2{
   margin-bottom: 88px;
 }
 
-@media (min-width: 768px) and (max-width: 901.98px){
+@media (min-width: 576px) and (max-width: 990px){
   li.in_view2{
-    margin-left: 350px;
+    margin-left: 20%;
+    width: 350px;
+    display: inline-block;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
+@media (min-width: 376px) and (max-width: 575.98px){
   li.in_view2{
-    margin-left: 180px;
+    width: 350px;
+    margin-left: 5%;
   }
 }
 
-@media screen and (max-width: 575.98px){
+@media screen and (max-width: 375.98px){
   li.in_view2{
-    margin-left: 5px;
+    width: 300px;
+    /* margin-left: 10%; */
   }
 }
 
