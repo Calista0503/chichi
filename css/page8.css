@@ -10,7 +10,15 @@ div.sign_box{
   border-radius: 10px;
 }
 
-@media (min-width: 376px) and (max-width: 575.98px){
+@media (min-width: 415px) and (max-width: 575.98px){
+  div.sign_box{
+    width: 300px;
+    left: 20%;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 376px) and (max-width: 414.98px){
   div.sign_box{
     width: 300px;
     left: 10%;
