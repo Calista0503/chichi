@@ -11,12 +11,40 @@
   </head>
   <body>
     <header class="header">
-      <div class="headerall">
+      <div class="container">
         <div class="logo_nav">
           <a href="./page.html" class="logo">
             <img src="../images/logo.png" alt="logo">
           </a>
         </div>
+      
+        <div class="inside">
+          <nav class="nav">
+            <ul class="nav_list">
+              <li class="bg"><a href="./page2.html">服務項目</a></li>
+              <li><a href="./page3.html">價目表</a></li>
+              <li><a href="./page4.html">美甲作品欣賞</a></li>
+              <li><a href="./page5.html">ChiChi家族</a></li>
+              <li><a href="./page6.html">Chicard會員</a></li>
+              <li><a href="./page7.html">Q&A</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="hamburger_nav" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="list">
+            <li><a href="./page2.html" class="items">服務項目</a></li>
+            <li><a href="./page3.html" class="price">價目表</a></li>
+            <li><a href="./page4.html" class="appreciate">美甲作品欣賞</a></li>
+            <li><a href="./page5.html" class="about">ChiChi家族</a></li>
+            <li><a href="./page6.html" class="member">Ｃhicard會員</a></li>
+            <li><a href="./page7.html" class="qa">Q&A</a></li>
+          </ul>
+        </div>
+
         <div class="icon">
           <a href="#">
             <img src="../images/login.png" id="login">
@@ -47,10 +75,6 @@
                   <label for="pw" class="lb">密碼：</label>
                   <input type="password" placeholder="英文大小寫數字" id="pw">
                 </div>
-                <!-- <div class="password">
-                  <label for="pww" class="lb">確認密碼：</label>
-                  <input type="password" placeholder="再次確認密碼" id="pww">
-                </div> -->
                 <div class="button">
                   <p>註冊</p>
                   <button class="btn1" type="button" name="button">登入</button>
@@ -59,22 +83,9 @@
             </div>
           </div>
         </div>
-
-        <div class="hamburger_nav" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-          <ul class="list">
-            <li><a href="./page2.html" class="items">服務項目</a></li>
-            <li><a href="./page3.html" class="price">價目表</a></li>
-            <li><a href="./page4.html" class="appreciate">美甲作品欣賞</a></li>
-            <li><a href="./page5.html" class="about">ChiChi家族</a></li>
-            <li><a href="./page6.html" class="member">Ｃhicard會員</a></li>
-            <li><a href="./page7.html" class="qa">Q&A</a></li>
-          </ul>
-        </div>
       </div>
     </header>
+  
 
 
     <div class="story">
@@ -119,7 +130,7 @@
       </div>
     </div>
 
-    <!-- 手機版 -->
+    <!-- app -->
     <div class="app">
       <div class="block">
         <img src="../images/bg2.PNG">
@@ -282,7 +293,7 @@
       </div>
       <div class="notice">
         <p>
-          本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，
+          本網站為緯育TibaMe前端設計工程師班第70期學員專題作品，
           <br>
           本平台僅供學習、展示之用。
           <br>
