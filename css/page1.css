@@ -57,7 +57,7 @@ div.logo_nav{
 
 a.logo img{
   width: 100%;
-  background-color: #f6f9fb;
+  /* background-color: #f6f9fb; */
   border-radius: 50px;
 }
 
@@ -312,7 +312,7 @@ div.hamburger_nav ul.list{
 
 @media (min-width: 376px) and (max-width: 414.98px){
   div.hamburger_nav ul.list{
-    right: -11px;
+    right: -10px;
   }
 }
 
@@ -395,7 +395,7 @@ div.icon{
 
 @media (min-width: 376px) and (max-width: 414.98px){
   div.icon{
-    margin-left: calc(72% + 15px);
+    margin-left: calc(72% + 12px);
     margin-top: 33px;
   }
 }
