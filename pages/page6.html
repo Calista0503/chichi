@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>ChiChi 美甲 | 手足護理 | 作品欣賞</title>
     <link rel="stylesheet" href="../css/page6.css">
-    <!-- <link rel="stylesheet" href="../css/page8.css"> -->
+    <link rel="stylesheet" href="../css/page8.css">
   </head>
   <body>
     <header class="header">
@@ -16,15 +16,8 @@
             <img src="../images/logo.png" alt="logo">
           </a>
         </div>
-
+      
         <div class="inside">
-          <!-- <form class="header-search">
-            <input type="search" placeholder="search">
-            <button>
-              <img src="../images/search.png" alt="搜索">
-            </button>
-          </form> -->
-
           <nav class="nav">
             <ul class="nav_list">
               <li><a href="./page2.html">服務項目</a></li>
@@ -35,26 +28,58 @@
               <li><a href="./page7.html">Q&A</a></li>
             </ul>
           </nav>
-        
+        </div>
 
-          <div class="hamburger_nav" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="list">
-              <li><a href="./page2.html" class="items">服務項目</a></li>
-              <li><a href="./page3.html" class="price">價目表</a></li>
-              <li><a href="./page4.html" class="appreciate">美甲作品欣賞</a></li>
-              <li><a href="./page5.html" class="about">ChiChi家族</a></li>
-              <li><a href="./page6.html" class="member">Ｃhicard會員</a></li>
-              <li><a href="./page7.html" class="qa">Q&A</a></li>
-            </ul>
-          </div>
+        <div class="hamburger_nav" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="list">
+            <li><a href="./page2.html" class="items">服務項目</a></li>
+            <li><a href="./page3.html" class="price">價目表</a></li>
+            <li><a href="./page4.html" class="appreciate">美甲作品欣賞</a></li>
+            <li><a href="./page5.html" class="about">ChiChi家族</a></li>
+            <li><a href="./page6.html" class="member">Ｃhicard會員</a></li>
+            <li><a href="./page7.html" class="qa">Q&A</a></li>
+          </ul>
+        </div>
 
-          <div class="icon">
-            <a href="#">
-              <img src="../images/login.png" id="login">
-            </a>
+        <div class="icon">
+          <a href="#">
+            <img src="../images/login.png" id="login">
+          </a>
+        </div>
+
+        <div class="box">
+          <div class="sign_box">
+            <div class="title_up">
+              <h1>會員登入</h1>
+              <div class="close">
+                <div class="close_bar1"></div>
+                <div class="close_bar2"></div>
+              </div>
+            </div>
+
+            <div class="signin">
+              <div class="left_side">
+                <div class="name">
+                  <label for="name" class="lb">姓名：</label>
+                  <input type="text" placeholder="王小美" id="name">
+                </div>
+                <div class="email">
+                  <label for="username" class="lb">Email：</label>
+                  <input type="text" placeholder="zxc123@gmail.com" id="username">
+                </div>
+                <div class="password">
+                  <label for="pw" class="lb">密碼：</label>
+                  <input type="password" placeholder="英文大小寫數字" id="pw">
+                </div>
+                <div class="button">
+                  <p>註冊</p>
+                  <button class="btn1" type="button" name="button">登入</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -380,6 +405,7 @@
     }
     </script>
     <script src="../js/page4.js"></script>
+    <script src="../js/page1.js"></script>
     <script>
       $("button.go_top").on("click",function(){
         $("html, body").animate({
