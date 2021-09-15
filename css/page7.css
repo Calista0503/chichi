@@ -62,7 +62,7 @@ a.logo img{
 
 @media (min-width: 376px) and (max-width: 575.98px){
   a.logo img{
-    width: 250px;
+    width: 240px;
   }
 }
 
@@ -351,6 +351,11 @@ div.hamburger_nav ul a{
   font-weight: 500;
   color: #8c5235;
   text-decoration: none;
+}
+
+div.hamburger_nav ul li a.qa{
+  color: #d46a2b;
+  border-bottom: 1px solid #d46a2b;
 }
 
 div.hamburger_nav ul a:hover{
