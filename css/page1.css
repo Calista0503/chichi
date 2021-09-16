@@ -57,8 +57,6 @@ div.logo_nav{
 
 a.logo img{
   width: 100%;
-  /* background-color: #f6f9fb; */
-  border-radius: 50px;
 }
 
 @media (min-width: 376px) and (max-width: 575.98px){
@@ -75,6 +73,7 @@ a.logo img{
 
 a.logo img:hover{
   box-shadow: 0 2px 3px #b9aaa2;
+  border-radius: 50px;
 }
 
 div.inside{
@@ -868,7 +867,7 @@ div.under{
   background-repeat: no-repeat;
 }
 
-@media (min-width: 376px) and (max-width: 575.98px){
+@media (min-width: 376px) and (max-width: 767.98px){
   div.under{
     background-image: url(../images/nail.jpg);
     width: 100%;
@@ -886,25 +885,41 @@ div.icon-logo:first-child{
   /* border: 1px solid red; */
   width: 450px;
   height: 150px;
-  margin-right: 150px;
-  background-color: #EDE6E1;
-  border-radius: 20px;
-  /* margin-left: 48%; */
+  margin-left: 43%;
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+  div.icon-logo:first-child{
+    margin-left: 43%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  div.icon-logo:first-child{
+    margin-left: 18%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  div.icon-logo:first-child{
+    width: 320px;
+    height: 120px;
+    margin-left: 27%;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 575.98px){
   div.icon-logo:first-child{
-    width: 250px;
-    height: 120px;
-    padding-top: 15px;
+    width: 270px;
+    height: 90px;
+    margin-left: 10%;
   }
 }
 
 @media screen and (max-width: 375.98px){
   div.icon-logo:first-child{
-    width: 320px;
-    height: 120px;
-    padding-top: 15px;
+    width: 235px;
+    height: 80px;
+    margin-left: 11%;
   }
 }
 
@@ -912,78 +927,94 @@ div.icon-logo{
   /* border: 1px solid red; */
   width: 450px;
   height: 150px;
-  margin-right: 30px;
   margin-top: 70px;
-  background-color: #EDE6E1;
-  border-radius: 20px;
-  box-shadow: 22px 0px #e8c1c3;
   position: relative;
-  /* margin-left: 58%; */
+  margin-left: 54%;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  div.icon-logo{
+    margin-left: 45%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  div.icon-logo{
+    margin-left:28%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  div.icon-logo{
+    width: 320px;
+    height: 120px;
+    margin-left: 27%;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 575.98px){
   div.icon-logo{
-    width: 250px;
-    height: 120px;
-    padding-top: 15px;
+    width: 270px;
+    height: 90px;
+    margin-left: 10%;
   }
 }
 
 @media screen and (max-width: 375.98px){
   div.icon-logo{
-    width: 320px;
-    height: 120px;
-    padding-top: 15px;
+    width: 235px;
+    height: 80px;
+    margin-left: 11%;
   }
 }
 
 div.icon-logo img{
   width: 168px;
-  margin: 20px 0;
+  margin: 20px 0 20px 102px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  div.icon-logo img{
+    width: 129px;
+    margin: 18px 0;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 575.98px){
   div.icon-logo img{
-    width: 110px;
-    margin: 10px 0;
+    width: 90px;
+    margin: 14px 0;
   }
 }
 
 @media screen and (max-width: 375.98px){
   div.icon-logo img{
-    width: 110px;
-    margin: 10px 0;
+    width: 80px;
+    margin: 14px 0;
   }
-}
-
-div.icon-logo:first-child > p{
-  margin-top: -110px;
-  margin-left: 140px;
-  color: #615d5a;
 }
 
 @media (min-width: 376px) and (max-width: 575.98px){
-  div.icon-logo:first-child > p{
-    margin-top: -100px;
-    margin-left: 96px;
-    color: #615d5a;
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 375.98px){
-  div.icon-logo:first-child > p{
-    margin-top: -100px;
-    margin-left: 140px;
-    color: #615d5a;
-    font-size: 14px;
+  div.icon-logo:first-child img{
+    width: 90px;
+    margin: 55px 0 0;
   }
 }
 
 div.icon-logo > p{
-  margin-top: -90px;
-  margin-left: 140px;
-  color: #615d5a;
+  margin-top: -80px;
+    margin-left: 265px;
+    color: #46423f;
+    background-color: rgb(255 235 213 / 50%);
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+  div.icon-logo > p{
+    margin-top: -83px;
+    margin-left: 120px;
+    color: #615d5a;
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 575.98px){
@@ -997,13 +1028,24 @@ div.icon-logo > p{
 
 @media screen and (max-width: 375.98px){
   div.icon-logo > p{
-    margin-top: -72px;
-    margin-left: 154px;
+    margin-top: -63px;
+    margin-left: 86px;
     color: #615d5a;
     font-size: 14px;
   }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px){
+  div.icon-logo:first-child > p{
+    margin-top: -68px;
+   }
+}
+
+@media (min-width: 376px) and (max-width: 575.98px){
+  div.icon-logo:first-child > p{
+   margin-top: -50px;
+  }
+}
 
 
 
@@ -1204,6 +1246,13 @@ footer div.picture span{
 footer div.picture span img{
   width: 45px;
   height: 45px;
+}
+
+@media (min-width: 376px) and (max-width: 575.98px){
+  footer div.picture span img{
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 375.98px){

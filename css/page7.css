@@ -74,6 +74,7 @@ a.logo img{
 
 a.logo img:hover{
   box-shadow: 0 2px 3px #b9aaa2;
+  border-radius: 50px;
 }
 
 div.inside{
@@ -523,10 +524,19 @@ div.order_list{
   }
 }
 
-@media (min-width: 376px) and (max-width: 767.98px){
+@media (min-width: 412px) and (max-width: 767.98px){
   div.order_list{
     width: 100%;
     box-shadow: none;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 414.98px){
+  div.order_list{
+    width: 100%;
+    box-shadow: none;
+    background-image: none;
+    background-color: #f8f8f8;
   }
 }
 
@@ -534,6 +544,8 @@ div.order_list{
   div.order_list{
     width: 100%;
     box-shadow: none;
+    background-image: none;
+    background-color: #f8f8f8;
   }
 }
 
@@ -692,6 +704,13 @@ footer div.picture span{
 footer div.picture span img{
   width: 45px;
   height: 45px;
+}
+
+@media (min-width: 376px) and (max-width: 575.98px){
+  footer div.picture span img{
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 375.98px){
