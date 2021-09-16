@@ -738,6 +738,11 @@ button.btn_drawer{
   cursor: pointer;
 }
 
+div.bon{
+  border-bottom: 1px solid #e3dddd;
+  margin-bottom: 28px;
+}
+
 div.sidebar h3{
   font-size: 20px;
   font-weight: bold;
@@ -753,6 +758,14 @@ div.sidebar img{
 div.sidebar p > span{
   color: #515456;
   font-size: 14px;
+}
+
+div.sidebar i{
+  width: 30px;
+  height: 30px;
+  color: #fc95a7;
+  margin-left: 16px;
+  cursor: pointer;
 }
 
 
