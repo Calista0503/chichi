@@ -1157,6 +1157,7 @@ div.right_sidebar{
   border-radius: 10px 0 0 10px;
   z-index: 100;
   transition: transform 1s;
+  box-shadow: inset 3px -3px 0 0 #82565699;
 }
 div.right_sidebar.-open{
   transform: translate(0%, -50%);
@@ -1182,6 +1183,11 @@ button.btn_drawer{
   cursor: pointer;
 }
 
+div.bon{
+  border-bottom: 1px solid #e3dddd;
+  margin-bottom: 28px;
+}
+
 div.sidebar h3{
   font-size: 20px;
   font-weight: bold;
@@ -1197,6 +1203,14 @@ div.sidebar img{
 div.sidebar p > span{
   color: #515456;
   font-size: 14px;
+}
+
+div.sidebar i{
+  width: 30px;
+  height: 30px;
+  color: #fc95a7;
+  margin-left: 16px;
+  cursor: pointer;
 }
 
 
