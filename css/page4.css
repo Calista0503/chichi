@@ -662,10 +662,16 @@ ul.drop_down > li{
   padding: 5px 0;
   font-weight: lighter;
   font-size: 15px;
+  display: inline-flex;
 }
 
 ul.drop_down > li:hover{
   color: #CB1B80;
+}
+
+input.Click{
+  height: 20px;
+  width: 25px;
 }
 
 
